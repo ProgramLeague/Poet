@@ -1,0 +1,275 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Poet.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Poet.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 271, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于智灵电子诗人"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,74,14,18,18
+    LTEXT           "智灵电子诗人 Ver1.0",IDC_STATIC,102,14,114,8,SS_NOPREFIX
+    LTEXT           "开发：智灵设计师",IDC_STATIC,102,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,109,147,50,17,WS_GROUP
+    LTEXT           "还为写诗句烦恼吗？ 还为没有写作灵感而犯愁吗？ 电子诗人可以方便为您搞定一切！进入程序请点击“开始创作”，美妙绝伦的诗句将涌现而出，为您带来惊喜！ 用户可以方便设置诗句行数和段落，甚至是诗句的压韵格式，让电脑为您代笔，创作美妙诗句。",IDC_STATIC,35,50,204,40
+    LTEXT           "PS：本软件是山寨某电子诗人的无聊之作，电脑创作的诗句作品请不要用于商业目的，谢谢 ^_^",IDC_STATIC,35,95,202,21
+    LTEXT           "了解更多，欢迎加入人工智能QQ讨论群:126471719",IDC_STATIC,35,121,202,21
+    GROUPBOX        "",IDC_STATIC,18,40,234,100
+END
+
+IDD_POET_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "智灵电子诗人"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始创作",IDC_BUTTON1,246,80,67,41
+    PUSHBUTTON      "?",IDC_BUTTON2,299,6,14,14
+    EDITTEXT        IDC_EDIT1,7,29,231,164,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_hs,146,6,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ds,205,6,32,12,ES_AUTOHSCROLL
+    LTEXT           "压韵：",IDC_STATIC,7,8,22,8
+    LTEXT           "韵脚：",IDC_STATIC,66,8,22,8
+    LTEXT           "行数:",IDC_STATIC,125,8,17,8
+    LTEXT           "段数:",IDC_STATIC,184,8,20,8
+    COMBOBOX        IDC_COMBO1,25,6,33,71,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,85,6,33,150,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Poet.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Poet.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_POET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_POET_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xc7ca, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_COMBO2, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO2, 0x403, 3, 0
+0x4941, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x4e41, "\000" 
+    IDC_COMBO2, 0x403, 4, 0
+0x4e41, 0x0047, 
+    IDC_COMBO2, 0x403, 3, 0
+0x4f41, "\000" 
+    IDC_COMBO2, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO2, 0x403, 3, 0
+0x4545, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x4945, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x4e45, "\000" 
+    IDC_COMBO2, 0x403, 4, 0
+0x4e45, 0x0047, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0049, 
+    IDC_COMBO2, 0x403, 4, 0
+0x4e49, 0x0047, 
+    IDC_COMBO2, 0x403, 2, 0
+0x004f, 
+    IDC_COMBO2, 0x403, 4, 0
+0x4e4f, 0x0047, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0052, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0055, 
+    IDC_COMBO2, 0x403, 3, 0
+0x4955, "\000" 
+    IDC_COMBO2, 0x403, 2, 0
+0x0056, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT_CK_DC          TEXT                    "res\\CK_DC.txt"
+IDR_TEXT_CK_MC          TEXT                    "res\\CK_MC.txt"
+IDR_TEXT_CK_XRC         TEXT                    "res\\CK_XRC.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Poet(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Poet.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
